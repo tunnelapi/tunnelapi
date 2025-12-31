@@ -48,6 +48,42 @@ TunnelAPI is a developer-first tunneling platform that lets you expose your loca
 
 </div>
 
+## 🌟 Why TunnelAPI?
+
+| Feature | TunnelAPI | ngrok | localtunnel |
+|---------|:---------:|:-----:|:-----------:|
+| **Free Tier** | ✅ 40K req/mo | ✅ Limited | ✅ Unlimited |
+| **Custom Subdomains** | ✅ Free | 💰 Paid | ❌ Random only |
+| **API Gateway** | ✅ Built-in | ❌ No | ❌ No |
+| **Webhook Testing** | ✅ With replay | ❌ No | ❌ No |
+| **Visual Workflow Builder** | ✅ Drag & drop | ❌ No | ❌ No |
+| **K8s-style Ingress** | ✅ Yes | ❌ No | ❌ No |
+| **Request Logging** | ✅ Real-time | ✅ Yes | ❌ No |
+| **VS Code Extension** | ✅ Yes | ✅ Yes | ❌ No |
+| **Self-hosted Option** | 🔜 Coming | 💰 Enterprise | ✅ Yes |
+
+**TunnelAPI gives you more features in the free tier** than competitors charge for in their paid plans.
+
+## 🛡️ Security
+
+Your security is our priority. TunnelAPI implements multiple layers of protection:
+
+| Security Feature | Description |
+|------------------|-------------|
+| 🔐 **SSL/TLS Encryption** | All traffic is encrypted end-to-end with TLS 1.3 |
+| 🔑 **Token Authentication** | Secure API tokens with granular permissions |
+| 🌐 **HTTPS Only** | All tunnel URLs are HTTPS by default |
+| 🛡️ **Rate Limiting** | Built-in protection against abuse and DDoS |
+| 🔒 **No Data Storage** | We don't store your request/response payloads |
+| ✅ **OAuth 2.0** | Sign in securely with Google or GitHub |
+| 📝 **Audit Logs** | Track all tunnel activity in your dashboard |
+
+```bash
+# All tunnels are automatically secured
+arm tunnel 3000
+# → https://myapp.free-tunnelapi.app (HTTPS enforced)
+```
+
 ## ✨ Features
 
 | Feature | Description |
