@@ -10,6 +10,10 @@
 [![Documentation](https://img.shields.io/badge/Docs-docs.tunnelapi.in-8b5cf6?style=for-the-badge)](https://docs.tunnelapi.in)
 [![VS Code Extension](https://img.shields.io/badge/VS%20Code-Extension-007ACC?style=for-the-badge&logo=visualstudiocode)](https://marketplace.visualstudio.com/items?itemName=TunnelAPI.tunnelapi-vscode)
 
+[![npm version](https://img.shields.io/npm/v/api-response-manager?style=for-the-badge&color=cb3837&logo=npm)](https://www.npmjs.com/package/api-response-manager)
+[![npm downloads](https://img.shields.io/npm/dt/api-response-manager?style=for-the-badge&color=cb3837&logo=npm&label=downloads)](https://www.npmjs.com/package/api-response-manager)
+[![License](https://img.shields.io/npm/l/api-response-manager?style=for-the-badge)](https://github.com/tunnelapi/vscode-extension/blob/main/LICENSE)
+
 </div>
 
 ---
@@ -24,56 +28,99 @@ TunnelAPI is a developer-first tunneling platform that lets you expose your loca
 - 🎯 **OAuth Callbacks** - Handle OAuth redirects during development
 - 🤝 **Client Demos** - Show work-in-progress to stakeholders
 
+<div align="center">
+
+```
+┌──────────────────────────────────────────────────────────────────┐
+│  ● ● ●                      Terminal                             │
+├──────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  $ arm tunnel 3000 -s myapp                                      │
+│                                                                  │
+│  ✓ Tunnel created successfully!                                  │
+│    Public URL: https://myapp.free-tunnelapi.app                  │
+│    Local Port: 3000                                              │
+│                                                                  │
+│  ℹ Forwarding traffic...                                         │
+│                                                                  │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+</div>
+
 ## ✨ Features
 
 | Feature | Description |
 |---------|-------------|
 | 🔒 **Secure Tunnels** | End-to-end encrypted connections with SSL/TLS |
 | 🏷️ **Custom Subdomains** | Get memorable URLs like `myapp.free-tunnelapi.app` |
-| � **API Gateway** | Route, transform, and manage API traffic |
+| 🌐 **API Gateway** | Route, transform, and manage API traffic |
 | ☸️ **K8s Ingress** | Kubernetes-style ingress rules for advanced routing |
 | 🪝 **Webhook Endpoints** | Dedicated endpoints with request logging & replay |
-| � **Real-time Analytics** | Monitor requests, latency, and errors |
+| 📊 **Real-time Analytics** | Monitor requests, latency, and errors |
 | 🔄 **Visual Workflow Builder** | Drag-and-drop API orchestration |
 
-## 📦 Quick Start
+## 📦 Installation
 
-### Using CLI
+### Option 1: npm (Recommended)
 
 ```bash
-# Install globally
 npm install -g api-response-manager
-
-# Login
-arm login
-
-# Start a tunnel
-arm tunnel 3000
 ```
 
-### Using VS Code Extension
+### Option 2: Download Binary
 
-1. Install [TunnelAPI Extension](https://marketplace.visualstudio.com/items?itemName=TunnelAPI.tunnelapi-vscode)
-2. Sign in from the sidebar
-3. Click "Start Tunnel" and enter your port
+Download the standalone binary for your platform:
+
+| Platform | Architecture | Download |
+|----------|--------------|----------|
+| **Windows** | x64 | [arm-win-x64.exe](https://tunnelapi.in/downloads/arm-win-x64.exe) |
+| **Linux** | x64 | [arm-linux-x64](https://tunnelapi.in/downloads/arm-linux-x64) |
+| **macOS** | x64 (Intel) | [arm-macos-x64](https://tunnelapi.in/downloads/arm-macos-x64) |
+| **macOS** | ARM64 (Apple Silicon) | [arm-macos-arm64](https://tunnelapi.in/downloads/arm-macos-arm64) |
+
+[View all downloads →](https://tunnelapi.in/download)
+
+### Option 3: VS Code Extension
+
+Install directly from the marketplace:
+- [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=TunnelAPI.tunnelapi-vscode)
+- [Open VSX Registry](https://open-vsx.org/extension/tunnelapi/tunnelapi-vscode)
+
+## 🚀 Quick Start
+
+```bash
+# Login to your account
+arm login
+
+# Start a tunnel on port 3000
+arm tunnel 3000
+
+# Start with custom subdomain
+arm tunnel 3000 -s myapp
+
+# View all commands
+arm --help
+```
+
+## 📸 Screenshots
+
+### Dashboard
+<img src="images/Dashboard.png" alt="TunnelAPI Dashboard" width="800" />
+
+### Visual Workflow Builder
+<img src="images/workflow-builder.png" alt="Visual Workflow Builder" width="800" />
+
+### VS Code Extension
+<img src="images/vscode-extension.png" alt="TunnelAPI VS Code Extension" width="800" />
 
 ## 📚 Resources
 
 - 🌐 [Website](https://tunnelapi.in)
 - 📖 [Documentation](https://docs.tunnelapi.in)
-- � [VS Code Extension](https://github.com/tunnelapi/vscode-extension)
-- � [CLI Downloads](https://tunnelapi.in/download)
-
-## 💰 Pricing
-
-| Plan | Tunnels | Requests/Month | Price |
-|------|---------|----------------|-------|
-| **Free** | 1 | 40,000 | ₹0 |
-| **Pro** | 5 | 500,000 | ₹749/mo |
-| **Business** | 20 | 2,000,000 | ₹2,499/mo |
-| **Enterprise** | Unlimited | Unlimited | Custom |
-
-[View full pricing →](https://tunnelapi.in/#pricing)
+- 💻 [VS Code Extension](https://github.com/tunnelapi/vscode-extension)
+- 📥 [CLI Downloads](https://tunnelapi.in/download)
+- 📥 [System Binary Downloads](https://tunnelapi.in/download)
 
 ## 🤝 Connect
 
